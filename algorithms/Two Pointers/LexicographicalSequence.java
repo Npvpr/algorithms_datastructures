@@ -56,6 +56,10 @@ public class LexicographicalSequence {
     }
 
     public static void reverse(char[] arr, int start, int end){
+        // method cannot change the reference itself
+        // this will only effect 'arr' array in this scope, not 'letters' array itself
+        // arr = new char[] {'X', 'Y', 'Z'}
+        
         while(end > start){
             char temp = arr[start];
             arr[start] = arr[end];
