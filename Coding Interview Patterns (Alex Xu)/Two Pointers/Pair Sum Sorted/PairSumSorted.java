@@ -1,13 +1,13 @@
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 public class PairSumSorted{
     public static void main(String[] args){
         // Arrays.asList converts an array into a list
-        ArrayList<Integer> inputArr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
+        ArrayList<Integer> inputArr = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9));
 
-        System.out.println(solution(inputArr, 5).equals(Arrays.asList(0, 3)) ? "Correct" : "Error");
-        System.out.println(solution(inputArr, 18).equals(Arrays.asList(-1, -1)) ? "Correct" : "Error");
+        System.out.println(solution(inputArr, 5).equals(List.of(0, 3)) ? "Correct" : "Error");
+        System.out.println(solution(inputArr, 18).equals(List.of(-1, -1)) ? "Correct" : "Error");
 
     }
 
@@ -28,7 +28,7 @@ public class PairSumSorted{
             int currentSum = inputArr.get(left) + inputArr.get(right);
             if (currentSum == target){
                 // System.out.println(left + ", " + right);
-                return new ArrayList<>(Arrays.asList(left, right));
+                return new ArrayList<>(List.of(left, right));
             }else if(currentSum < target){
                 left++;
             }else{
@@ -37,6 +37,6 @@ public class PairSumSorted{
         }
         
         // System.out.println(left + ", " + right);
-        return new ArrayList<>(Arrays.asList(-1, -1));
+        return new ArrayList<>(List.of(-1, -1));
     }
 }
