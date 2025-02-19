@@ -7,10 +7,10 @@ public class ThreeSum {
         // For lists compare with list1.equals(list2)
         // For arrays compare with Arrays.equals(array1, array2)
         System.out.println(solution(new int[] { -1, 0, 1, 2, -1, -4 })
-                .equals(Arrays.asList(Arrays.asList(-1, -1, 2), Arrays.asList(-1, 0, 1))) ? "Correct" : "Error");
-        System.out.println(solution(new int[] { 0, 1, 1 }).equals(Arrays.asList()) ? "Correct" : "Error");
+                .equals(Arrays.asList(Arrays.asList(-1, -1, 2), Arrays.asList(-1, 0, 1))));
+        System.out.println(solution(new int[] { 0, 1, 1 }).equals(Arrays.asList()));
         System.out.println(
-                solution(new int[] { 0, 0, 0 }).equals(Arrays.asList(Arrays.asList(0, 0, 0))) ? "Correct" : "Error");
+                solution(new int[] { 0, 0, 0 }).equals(Arrays.asList(Arrays.asList(0, 0, 0))));
     }
 
     public static List<List<Integer>> solution(int[] nums) {

@@ -1,10 +1,10 @@
 public class LexicographicalSequence {
     public static void main(String[] args) {
-        System.out.println(solution("a").equals("a") ? "Correct" : "Error");
-        System.out.println(solution("aaaa").equals("aaaa") ? "Correct" : "Error");
-        System.out.println(solution("dcba").equals("abcd") ? "Correct" : "Error");
-        System.out.println(solution("abcedda").equals("abdacde") ? "Correct" : "Error");
-        System.out.println(solution("ynitsed").equals("ynsdeit") ? "Correct" : "Error");
+        System.out.println(solution("a").equals("a"));
+        System.out.println(solution("aaaa").equals("aaaa"));
+        System.out.println(solution("dcba").equals("abcd"));
+        System.out.println(solution("abcedda").equals("abdacde"));
+        System.out.println(solution("ynitsed").equals("ynsdeit"));
     }
 
     public static String solution(String inputStr) {

@@ -7,17 +7,14 @@ public class ShiftZerosEnd {
 
     public static void main(String[] args) {
 
-        System.out.println(Arrays.equals(solution(new int[] {}), new int[] {}) ? "Correct" : "Error");
-        System.out.println(Arrays.equals(solution(new int[] { 0 }), new int[] { 0 }) ? "Correct" : "Error");
-        System.out.println(Arrays.equals(solution(new int[] { 1 }), new int[] { 1 }) ? "Correct" : "Error");
-        System.out.println(Arrays.equals(solution(new int[] { 0, 0, 0 }), new int[] { 0, 0, 0 }) ? "Correct" : "Error");
-        System.out.println(Arrays.equals(solution(new int[] { 1, 3, 2 }), new int[] { 1, 3, 2 }) ? "Correct" : "Error");
-        System.out.println(Arrays.equals(solution(new int[] { 1, 1, 1, 0, 0 }), new int[] { 1, 1, 1, 0, 0 }) ? "Correct"
-                : "Error");
-        System.out.println(Arrays.equals(solution(new int[] { 0, 0, 1, 1, 1 }), new int[] { 1, 1, 1, 0, 0 }) ? "Correct"
-                : "Error");
-        System.out.println(Arrays.equals(solution(new int[] { 1, 0, 1, 0, 1 }), new int[] { 1, 1, 1, 0, 0 }) ? "Correct"
-                : "Error");
+        System.out.println(Arrays.equals(solution(new int[] {}), new int[] {}));
+        System.out.println(Arrays.equals(solution(new int[] { 0 }), new int[] { 0 }));
+        System.out.println(Arrays.equals(solution(new int[] { 1 }), new int[] { 1 }));
+        System.out.println(Arrays.equals(solution(new int[] { 0, 0, 0 }), new int[] { 0, 0, 0 }));
+        System.out.println(Arrays.equals(solution(new int[] { 1, 3, 2 }), new int[] { 1, 3, 2 }));
+        System.out.println(Arrays.equals(solution(new int[] { 1, 1, 1, 0, 0 }), new int[] { 1, 1, 1, 0, 0 }));
+        System.out.println(Arrays.equals(solution(new int[] { 0, 0, 1, 1, 1 }), new int[] { 1, 1, 1, 0, 0 }));
+        System.out.println(Arrays.equals(solution(new int[] { 1, 0, 1, 0, 1 }), new int[] { 1, 1, 1, 0, 0 }));
 
     }
 

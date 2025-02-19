@@ -6,8 +6,8 @@ public class PairSumSorted{
         // Arrays.asList converts an array into a list
         ArrayList<Integer> inputArr = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9));
 
-        System.out.println(solution(inputArr, 5).equals(List.of(0, 3)) ? "Correct" : "Error");
-        System.out.println(solution(inputArr, 18).equals(List.of(-1, -1)) ? "Correct" : "Error");
+        System.out.println(solution(inputArr, 5).equals(List.of(0, 3)));
+        System.out.println(solution(inputArr, 18).equals(List.of(-1, -1)));
 
     }
 

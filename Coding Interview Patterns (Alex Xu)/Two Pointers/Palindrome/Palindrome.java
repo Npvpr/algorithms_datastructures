@@ -1,11 +1,11 @@
 public class Palindrome {
     // skip non-alphanumeric characters
     public static void main(String[] args) {
-        System.out.println(solution("") == true ? "Correct" : "Error");
-        System.out.println(solution("a") == true ? "Correct" : "Error");
-        System.out.println(solution(",:") == true ? "Correct" : "Error");
-        System.out.println(solution("AbBa") == true ? "Correct" : "Error");
-        System.out.println(solution("defeda") == false ? "Correct" : "Error");
+        System.out.println(solution("") == true);
+        System.out.println(solution("a") == true);
+        System.out.println(solution(",:") == true);
+        System.out.println(solution("AbBa") == true);
+        System.out.println(solution("defeda") == false);
     }
 
     public static boolean solution(String inputStr) {
