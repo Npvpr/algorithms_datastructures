@@ -6,6 +6,7 @@ class Node:
         self.left = None
         self.right = None
 
+# No restrictions, as long as maximum children is 2 for each node
 def binary_tree():
 
     node0 = Node(0)
@@ -32,6 +33,10 @@ def binary_tree():
 
     visualize_tree.plot_hierarchical_tree(bt, "Binary Tree")
 
+# All nodes on the left side must be smaller than the current/each node
+# All nodes on the right side must be bigger than or equal to the current/each node
+# Equal nodes are put to the right side of node
+# When deleting, replace current node with either smallest from the right side or largest from the left side
 def binary_search_tree():
 
     node0 = Node(0)
@@ -59,5 +64,5 @@ def binary_search_tree():
     visualize_tree.plot_hierarchical_tree(bst, "Binary Search Tree")
 
 # Create and visualize the trees
-# binary_tree()
-binary_search_tree()
+binary_tree()
+#binary_search_tree()
