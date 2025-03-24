@@ -8,7 +8,7 @@
 # this method cost 0(n) time complexity
 class Solution:
     
-    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool: # type: ignore
 
         return maxHeight_isBalanced(root) != -1
 

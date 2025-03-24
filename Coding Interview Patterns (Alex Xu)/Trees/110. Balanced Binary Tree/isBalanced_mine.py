@@ -6,9 +6,11 @@
 #         self.right = right
 
 # this method cost 0(n^2) time complexity
+from collections import deque
+
 class Solution:
     
-    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool: # type: ignore
 
         if not root:
             return True
