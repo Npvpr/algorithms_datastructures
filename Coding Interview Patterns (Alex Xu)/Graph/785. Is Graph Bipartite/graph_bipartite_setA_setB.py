@@ -1,5 +1,8 @@
+from collections import deque
+
+
 class Solution:
-    def isBipartite(self, graph: List[List[int]]) -> bool:
+    def isBipartite(self, graph: List[List[int]]) -> bool: # type: ignore
             
         setA = set()
         setB = set()
